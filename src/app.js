@@ -16,7 +16,6 @@ const URL_BASE = process.env.URL_BASE
 
 
 const allowedOrigins = [
-  "http://localhost:5173",
   "https://bookstore-client-ire0.onrender.com"
 ];
 
