@@ -16,7 +16,7 @@ const URL_BASE = process.env.URL_BASE
 
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin:["http://localhost:5173", "https://bookstore-api-rwfh.onrender.com"]
     credentials: true
 }))
 
