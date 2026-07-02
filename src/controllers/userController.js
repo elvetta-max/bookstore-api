@@ -46,14 +46,15 @@ export const findOrCreateUser = async (req, res) => {
             user = await addNewUserToDb(userID, name, email)
         }
 
-
+/*
         res.cookie('auth_token', token, {
             httpOnly: true,
             secure: isProduction,
             sameSite: 'lax',
             path: '/',
             maxAge: 7 * 24 * 60 * 60 * 1000
-        }).status(200).json({
+        })*/
+            res.status(200).json({
             ok: true,
             message: "Successfully logged in",
             user
